@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+    <meta charset="utf-8">
+    <title>DataBase Term Project</title>
+</head>
+<body>
+
+<img src="library1.jpg" width="500" height="500">
+
+<button type="button" name="button" id="Login">로그인</button>
+<button type="button" name="button" id="SignUp">회원가입</button>
+
+<div id="login_box"> <!-- 로그인 창-->
+    <form method="post" action="login.jsp">
+        <fieldset>
+            <h3>로그인 창</h3>
+            아이디 : <input type="text" name="id" pattern="^([A-Za-z0-9가-힣]){3,15}"><br>
+            비밀번호 : <input type="password" name="pw"><br>
+            <input type="submit" value="로그인">
+            <input type="reset" value="초기화">
+            <button type="button" name="button" id="cancel1">닫기</button>
+        </fieldset>
+    </form>
+</div>
+
+<div id="signup_box"> <!-- 회원가입 창-->
+    <form method="post" action="signup.jsp">
+        <fieldset>
+            <h3>회원가입 창</h3>
+            아이디 : <input type="text" name="id" pattern="^([A-Za-z0-9가-힣]){3,15}"><br>
+            비밀번호 : <input type="password" name="pw"><br>
+            이메일 : <input type="text" name="email" pattern="^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$"><br>
+            <input type="submit" value="회원가입">
+            <input type="reset" value="초기화">
+            <button type="button" name="button" id="cancel2">닫기</button>
+        </fieldset>
+    </form>
+</div>
+
+</body>
+<script type="text/javascript" src="./index.js"></script>
+</html>
